@@ -1,0 +1,23 @@
+{
+  "name": "foo",
+  "script": "index.js",
+  "actions": [
+    {
+      "function": "help",
+      "aliases": ["help"],
+      "acls": {
+        "dm": false,
+        "mention": true
+      }
+    },
+    {
+      "function": "foo",
+      "aliases": [":message([\\s\\S]*)", "message: :message([\\s\\S]*)", "message :message([\\s\\S]*)" ],
+      "acls": {
+        "dm": false,
+        "explicitMention": true
+      },
+      "premessage": "_processing foo_"
+    }
+  ]
+}
