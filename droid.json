@@ -7,6 +7,7 @@
       "aliases": ["help"],
       "acls": {
         "dm": false,
+        "channels": ["droid_test"],
         "mention": true
       }
     },
